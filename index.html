@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshuman Rastogi</title>
+</head>
+<body>
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-image: url("./bg.png");
+          background-repeat: no-repeat; 
+          background-size: 1500px 850px;
+        }
+        
+        .flip-card {
+          background-color: transparent;
+          width: 300px;
+          height: 300px;
+          perspective: 1000px;
+          margin-left: 460px;
+        }
+        
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+        }
+        
+        .flip-card-back {
+          background-color: #2980b9;
+          color: white;
+          transform: rotateY(180deg);
+        }
+        img {
+         width:300px;
+         height:300px;
+        }
+        #mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 200px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 20px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 80px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 140px;
+  background-color: #555
+}
+#music {
+    margin-left: 400px;
+}
+</style>
+</head>
+<body>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./Picture1.png">
+            </div>
+            <div class="flip-card-back">
+            <img src="./Picture1.png">
+            </div>
+          </div>
+        </div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" onclick="hoverAnswer()" id="blog">Youtube channel</a>
+  <a href="./HTML2.html" target="_blank" id="projects">My Projects</a>
+  <a href="#" onclick="hoverAnswer()" id="contact">Contact me</a>
+  <a href="#" onclick="hoverAnswer()" id="about">About me</a>
+</div>
+   
+<iframe width="400px" height="200px" src="https://www.youtube.com/embed/KdYmInI8k4A"></iframe>
+
+<iframe id="music" width="400px" height="200px" src="https://www.youtube.com/embed/Crmt2I9vTY4"></iframe>
+<script src="./sit.js"></script>
+</body>
+</html> 

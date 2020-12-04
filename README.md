@@ -1,2 +1,1 @@
-# Anshuman-Rastogi-website
-Made by Devansh
+# My-Second-Website
